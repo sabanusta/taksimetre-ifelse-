@@ -1,0 +1,22 @@
+public class taksimetre {
+    public static void main(String[] args) {
+
+        double gidilenMesafe, toplamUcret ;
+        int acilisUcreti= 10;
+        double kmucreti=2.20;
+
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("GİDİLEN MESAFEYİ GİRİNİZ");
+        gidilenMesafe= scan.nextInt();
+        toplamUcret= acilisUcreti+(gidilenMesafe*kmucreti);
+
+        if (toplamUcret<20) {
+            System.out.println("ODENECEK TUTAR 20TL DİR ");
+        } else {
+            System.out.println("ODENECEK TUTAR" + toplamUcret + " TL DİR");
+        }
+
+
+    }
+}
